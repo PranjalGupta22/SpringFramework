@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="
+	http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd">
+	
+	<bean name = "emp1" class = "com.springcorepro.collections.Emp" >
+		<property name = "name" value = "Pranjal" />
+		<property name = "phones">
+			<list>
+				<value>1234567809</value>
+				<value>5241637859</value>
+				<value>6247812348</value>
+			</list>
+		</property>		
+		
+		<property name = "addresses">
+			<set>
+				<value>Bhopal</value>
+				<value>Gwalior</value>
+				<value>Shajapur</value>
+			</set>
+		</property>
+		
+		<property name = "courses">
+			<map>
+				<entry>
+					<key><value>JAVA</value></key>
+					<value>2 Months</value>
+				</entry>
+				<entry key = "Frontend" value = "1 Month"/>
+				<entry key = "Backend" value = "3 Months" />	
+			</map>
+		</property>
+		
+		<property name = "prop">
+			<props>
+				<prop key = "name">Devansh</prop>
+				<prop key = "Stream">Non-IT</prop>
+			</props>
+		</property>
+	</bean>
+	
+</beans>
