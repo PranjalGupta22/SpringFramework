@@ -3,6 +3,7 @@ package com.springcorepro.lifecycle;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
+//COMMENT -- IMPLEMENTING LIFECYCLE BY ANNOTAION
 public class Snacks {
 	private String name;
 

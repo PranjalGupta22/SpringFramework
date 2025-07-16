@@ -1,4 +1,4 @@
- <?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="
 	http://www.springframework.org/schema/context"
@@ -21,6 +21,13 @@
 		<constructor-arg value = "20" type = "int"/>-->
 		<constructor-arg value = "50" type = "double" index = "1"/>
 		<constructor-arg value = "30" type = "double" index = "0"/>
+	</bean>
+	
+	<bean name = "add" class = "com.springcorepro.ci.Addition">
+		 <!-- <constructor-arg value = "10" type = "int" />
+		<constructor-arg value = "20" type = "int"/>-->
+		<constructor-arg value = "500" type = "int" index = "1"/>
+		<constructor-arg value = "30" type = "int" index = "0"/>
 	</bean>
 	
 </beans>

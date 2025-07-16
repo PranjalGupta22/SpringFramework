@@ -10,6 +10,8 @@
 	http://www.springframework.org/schema/context/spring-context.xsd">
 	
 	<context:annotation-config/>
+	
+	<!-- COMMENT -- IMPLEMENTING LIFECYCLE BY XML -->
 	<!-- <bean class = "com.springcorepro.lifecycle.Items" name = "item1" 
 	init-method = "init" destroy-method = "destroy">
 		<property name="price" value = "20" />
